@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && [ -n \"$(git status --porcelain)\" ] && git add -A && git commit -q -m \"Auto: cambios de la sesión $(date '+%Y-%m-%d %H:%M')\" -m \"Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\" && git push -q origin main; true",
+            "statusMessage": "Guardando cambios en GitHub…",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

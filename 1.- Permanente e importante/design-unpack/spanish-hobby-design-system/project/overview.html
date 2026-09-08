@@ -1,0 +1,92 @@
+<!-- @dsCard group="Brand" viewport="900x600" name="System overview" subtitle="Front door: the brand at a glance with links into the kit." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spanish Hobby — Design System</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<style>
+  body { margin: 0; background: var(--surface-page); color: var(--text-body); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 64px 40px 96px; }
+  .lockup { display: flex; align-items: center; gap: 16px; }
+  .lockup img { width: 56px; height: 56px; }
+  .word { font-size: 38px; font-weight: 700; letter-spacing: -0.01em; }
+  .word .s { color: var(--teal-600); }
+  .word .h { color: var(--brown-500); font-weight: 500; }
+  .lede { font-size: var(--text-xl); color: var(--ink-700); max-width: 40ch; line-height: 1.4; margin: 28px 0 0; }
+  .lede b { color: var(--teal-700); font-weight: 600; }
+  .eyebrow { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange-500); margin: 56px 0 18px; }
+  .swatches { display: flex; gap: 0; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .sw { height: 72px; flex: 1; display: flex; align-items: flex-end; padding: 9px 11px; font-size: 11px; font-weight: 600; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 18px; }
+  .tile { background: var(--white); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; text-decoration: none; transition: var(--transition-lift); border: 1px solid var(--border-subtle); }
+  .tile:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .tile .ic { width: 42px; height: 42px; border-radius: 50%; background: var(--teal-600); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 17px; }
+  .tile h3 { margin: 4px 0 0; font-size: var(--text-lg); color: var(--text-strong); }
+  .tile p { margin: 0; font-size: var(--text-sm); color: var(--text-muted); line-height: 1.5; }
+  .band { background: var(--teal-700); color: #fff; border-radius: var(--radius-lg); padding: 32px 36px; margin-top: 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .band h2 { color: #fff; margin: 0 0 6px; font-size: var(--text-xl); }
+  .band p { margin: 0; color: var(--teal-200); font-size: var(--text-sm); }
+  .btn { display: inline-flex; align-items: center; gap: 9px; background: #fff; color: var(--teal-700); padding: 13px 24px; border-radius: var(--radius-sm); font-weight: 600; font-size: var(--text-sm); text-decoration: none; white-space: nowrap; }
+  .specimen { display: flex; align-items: baseline; gap: 22px; flex-wrap: wrap; }
+  .specimen .d { font-size: 52px; font-weight: 800; letter-spacing: -0.03em; color: var(--brown-500); line-height: 1; }
+  .specimen .serif { font-family: var(--font-serif); font-style: italic; font-size: 26px; color: var(--teal-600); }
+  .meta { font-family: var(--font-sans); font-size: 13px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="lockup">
+      <img src="assets/logo-mark.png" alt="Spanish Hobby" />
+      <span class="word"><span class="s">Spanish</span><span class="h">Hobby</span></span>
+    </div>
+    <p class="lede">A calm, editorial design system for discovering how Spanish <b>really works</b> — pattern and structure, never memorization.</p>
+
+    <p class="eyebrow">Palette</p>
+    <div class="swatches">
+      <div class="sw" style="background:var(--teal-700);color:#fff">Deep teal</div>
+      <div class="sw" style="background:var(--teal-600);color:#fff">Teal · primary</div>
+      <div class="sw" style="background:var(--orange-500);color:#fff">Orange · accent</div>
+      <div class="sw" style="background:var(--brown-500);color:#fff">Brown</div>
+      <div class="sw" style="background:var(--paper);color:var(--ink-700)">Paper</div>
+      <div class="sw" style="background:var(--ink-900);color:#fff">Ink</div>
+    </div>
+
+    <p class="eyebrow">Type — Inter, with a serif for editorial moments</p>
+    <div class="specimen">
+      <span class="d">Spanish</span>
+      <span class="serif">“Patterns, not memorization.”</span>
+      <span class="meta">Inter 800 · Source Serif 4 italic</span>
+    </div>
+
+    <p class="eyebrow">Explore</p>
+    <div class="grid">
+      <a class="tile" href="ui_kits/website/index.html">
+        <span class="ic"><i class="fa-solid fa-window-maximize"></i></span>
+        <h3>Website UI kit</h3>
+        <p>Interactive recreation of the marketing site — Home, The Hidden Structure, The Building Blocks, About.</p>
+      </a>
+      <a class="tile" href="readme.md">
+        <span class="ic"><i class="fa-solid fa-book-open"></i></span>
+        <h3>Brand guide</h3>
+        <p>Content fundamentals, visual foundations, iconography and the full manifest.</p>
+      </a>
+      <div class="tile">
+        <span class="ic"><i class="fa-solid fa-shapes"></i></span>
+        <h3>Components &amp; tokens</h3>
+        <p>11 components and 199 tokens. Browse every specimen in the Design System tab.</p>
+      </div>
+    </div>
+
+    <div class="band">
+      <div>
+        <h2>All content, designed with care.</h2>
+        <p>Calm, curious, intelligent — MasterClass meets National Geographic. Never gamified.</p>
+      </div>
+      <a class="btn" href="ui_kits/website/index.html">Open the site kit <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</body>
+</html>

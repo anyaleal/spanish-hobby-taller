@@ -1,0 +1,83 @@
+<!-- @dsCard group="Components" viewport="700x900" name="Content — Cards, Bands, Logo" subtitle="ArticleCard, FeatureCard, SectionBand and the brand Logo lockup." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<style>
+  body { margin: 0; padding: 22px; background: var(--surface-page); font-family: var(--font-sans); }
+  .lab { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 14px; }
+  .block { margin-bottom: 26px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+  .band-wrap { border-radius: var(--radius-md); overflow: hidden; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="../../_ds_bundle.js"></script>
+
+  <script type="text/babel">
+    const { ArticleCard, FeatureCard, SectionBand, Logo, Eyebrow } = window.SpanishHobbyDesignSystem_99e317;
+    const A = '../../assets/img/';
+
+    function Demo() {
+      return (
+        <div>
+          <div className="block">
+            <p className="lab">Logo lockup</p>
+            <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
+              <Logo markSrc={A.replace('img/','') + 'logo-mark.png'} size="md" />
+              <div style={{ background: 'var(--surface-inverse)', padding: '14px 20px', borderRadius: 'var(--radius-md)' }}>
+                <Logo markSrc={A.replace('img/','') + 'logo-mark.png'} size="md" onDark />
+              </div>
+            </div>
+          </div>
+
+          <div className="block">
+            <p className="lab">Feature cards</p>
+            <div className="grid3">
+              <FeatureCard icon="fa-solid fa-eye-low-vision" title="The Hidden Structure">
+                What gives Spanish its shape and logic — what you don't see, but is always there.
+              </FeatureCard>
+              <FeatureCard icon="fa-solid fa-puzzle-piece" title="The Building Blocks" highlighted>
+                Learn what each piece does, how it behaves, and how they all fit together.
+              </FeatureCard>
+              <FeatureCard icon="fa-solid fa-face-smile-wink" title="Real World Spanish">
+                How it's spoken, how it's mastered, how it's lived.
+              </FeatureCard>
+            </div>
+          </div>
+
+          <div className="block">
+            <p className="lab">Article cards</p>
+            <div className="grid3">
+              <ArticleCard image={A+'structure-1.jpg'} title="Spanish Semantics & Pragmatics" date="May 29th, 2025"
+                excerpt="Go beyond words to understand what's said and what's meant." />
+              <ArticleCard image={A+'tonal-warm.jpg'} title="Spanish Interjections" date="June 13th, 2025"
+                excerpt="Interjections add emotion, authenticity and rhythm — the sparks of a conversation." />
+              <ArticleCard image={A+'structure-2.jpg'} title="Cultural Nuances in Spanish" date="June 16th, 2025"
+                excerpt="Beyond slang: the social codes, habits and emotion of real conversations." />
+            </div>
+          </div>
+
+          <div className="block">
+            <p className="lab">Section band</p>
+            <div className="band-wrap">
+              <SectionBand tone="teal" rule icon="fa-solid fa-thumbs-up">
+                <h2 style={{ fontSize: 'var(--text-2xl)' }}>All content on this site is 100% free and designed with care.</h2>
+                <p style={{ color: 'var(--teal-200)', maxWidth: '52ch' }}>No paywalls, no sign-ups, no pressure — just a clear, thoughtful way to learn Spanish.</p>
+              </SectionBand>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+  </script>
+</body>
+</html>

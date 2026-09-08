@@ -1,0 +1,25 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Elevation" subtitle="Soft, warm-tinted shadows. Cards float gently on paper; hover lifts 2px." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 26px 22px; background: var(--surface-page); font-family: var(--font-sans); }
+  .row { display: flex; gap: 26px; align-items: center; }
+  .item { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+  .box { width: 96px; height: 70px; background: var(--white); border-radius: var(--radius-md); }
+  .lab { font-size: 11px; color: var(--text-muted); text-align: center; }
+  .lab b { display: block; color: var(--text-strong); font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-xs)"></div><div class="lab"><b>xs</b>hairline</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-sm)"></div><div class="lab"><b>sm</b>resting</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-md)"></div><div class="lab"><b>md</b>card</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-lg)"></div><div class="lab"><b>lg</b>card hover</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-xl)"></div><div class="lab"><b>xl</b>dialog</div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Neutrals — Ink & Paper" subtitle="Warm-tinted grays. Near-black #1C1C1C for text; off-white #F7F5F1 for pages." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 18px; background: var(--surface-page); }
+  .row { display: flex; gap: 0; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .sw { flex: 1; height: 96px; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px; }
+  .sw span { font-family: var(--font-sans); font-size: 11px; line-height: 1.3; }
+  .sw .name { font-weight: 600; }
+  .sw .hex { opacity: 0.85; font-variant-numeric: tabular-nums; }
+  .dark span { color: rgba(255,255,255,0.95); }
+  .light span { color: var(--ink-800); }
+  .tag { display: inline-block; margin: 0 0 12px; font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+</style>
+</head>
+<body>
+  <div class="tag">Ink & Paper</div>
+  <div class="row">
+    <div class="sw dark" style="background:var(--ink-900)"><span class="name">ink-900 ●</span><span class="hex">#1C1C1C</span></div>
+    <div class="sw dark" style="background:var(--ink-700)"><span class="name">ink-700</span><span class="hex">#4A4946</span></div>
+    <div class="sw dark" style="background:var(--ink-600)"><span class="name">ink-600</span><span class="hex">#6B6A65</span></div>
+    <div class="sw light" style="background:var(--ink-400)"><span class="name">ink-400</span><span class="hex">#ABA89F</span></div>
+    <div class="sw light" style="background:var(--ink-200)"><span class="name">ink-200</span><span class="hex">#E2DFD7</span></div>
+    <div class="sw light" style="background:var(--ink-100)"><span class="name">ink-100</span><span class="hex">#EDEAE3</span></div>
+    <div class="sw light" style="background:var(--paper)"><span class="name">paper</span><span class="hex">#F7F5F1</span></div>
+    <div class="sw light" style="background:var(--white)"><span class="name">white</span><span class="hex">#FFFFFF</span></div>
+  </div>
+</body>
+</html>

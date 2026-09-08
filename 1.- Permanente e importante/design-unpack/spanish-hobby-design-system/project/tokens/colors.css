@@ -1,0 +1,108 @@
+/* ============================================================
+   Spanish Hobby — Color Tokens
+   Calm, editorial, warm. Teal leads; orange accents sparingly;
+   brown as a quiet secondary; warm off-white grounds everything.
+   Never neons, bright greens, or red+yellow.
+   ============================================================ */
+
+:root {
+  /* ---- Brand: Teal (primary) ---------------------------- */
+  --teal-900: #0B3D47;
+  --teal-800: #0E4F5C;
+  --teal-700: #14596A;   /* deep full-bleed sections */
+  --teal-600: #1A6B7C;   /* PRIMARY brand teal */
+  --teal-500: #2C7E8F;
+  --teal-400: #5A9BA8;
+  --teal-300: #8FBCC5;
+  --teal-200: #BFD9DF;
+  --teal-100: #DCEAEE;
+  --teal-50:  #ECF3F5;
+
+  /* ---- Brand: Orange (accent / CTA highlight) ----------- */
+  --orange-700: #8F4419;
+  --orange-600: #A8521F;
+  --orange-500: #C8662A;   /* ACCENT orange */
+  --orange-400: #D9824B;
+  --orange-300: #E8A878;
+  --orange-200: #F2CBAC;
+  --orange-100: #F7DFCB;
+  --orange-50:  #FBEEE3;   /* peach card / band wash */
+
+  /* ---- Brand: Brown (secondary accent) ------------------ */
+  --brown-700: #5E4A30;
+  --brown-600: #6F583A;
+  --brown-500: #8B6F47;    /* SECONDARY brown */
+  --brown-400: #A78B62;
+  --brown-300: #C2AC88;
+  --brown-200: #DBCBB1;
+  --brown-100: #ECE2D2;
+  --brown-50:  #F4EDE2;
+
+  /* ---- Neutrals (warm-tinted) --------------------------- */
+  --ink-900: #1C1C1C;      /* NEAR-BLACK primary text */
+  --ink-800: #2E2E2C;
+  --ink-700: #4A4946;
+  --ink-600: #6B6A65;
+  --ink-500: #8C8A83;
+  --ink-400: #ABA89F;
+  --ink-300: #C9C6BC;
+  --ink-200: #E2DFD7;
+  --ink-100: #EDEAE3;
+  --paper:   #F7F5F1;      /* OFF-WHITE page background */
+  --white:   #FFFFFF;
+
+  /* ---- Semantic: surfaces ------------------------------- */
+  --surface-page:        var(--paper);
+  --surface-card:        var(--white);
+  --surface-raised:      var(--white);
+  --surface-sunken:      var(--ink-50, #F1EEE8);
+  --surface-inverse:     var(--teal-700);   /* teal full-width bands */
+  --surface-inverse-alt: var(--brown-500);  /* alternating brown bands */
+  --surface-accent-wash: var(--orange-50);  /* peach feature card */
+  --surface-utility-bar: var(--brown-500);  /* top contact strip */
+
+  /* ---- Semantic: text ----------------------------------- */
+  --text-strong:    var(--ink-900);
+  --text-body:      var(--ink-800);
+  --text-muted:     var(--ink-600);
+  --text-subtle:    var(--ink-500);
+  --text-on-teal:   var(--white);
+  --text-on-teal-muted: var(--teal-200);
+  --text-on-brown:  var(--white);
+  --text-heading:   var(--teal-600);   /* teal section headings */
+  --text-link:      var(--teal-600);
+  --text-link-hover: var(--teal-800);
+  --text-accent:    var(--orange-500);
+
+  /* ---- Semantic: borders & lines ------------------------ */
+  --border-subtle:  var(--ink-200);
+  --border-default: var(--ink-300);
+  --border-strong:  var(--ink-400);
+  --border-teal:    var(--teal-600);
+  --border-on-teal: rgba(255, 255, 255, 0.45);
+  --rule-accent:    var(--teal-400);     /* short underline rules */
+
+  /* ---- Semantic: interactive (teal primary) ------------- */
+  --action:          var(--teal-600);
+  --action-hover:    var(--teal-700);
+  --action-active:   var(--teal-800);
+  --action-text:     var(--white);
+  --action-ghost-text: var(--teal-600);
+  --action-ghost-border: var(--teal-600);
+  --action-ghost-hover-bg: var(--teal-50);
+
+  /* ---- Semantic: accent CTA (orange) -------------------- */
+  --accent:        var(--orange-500);
+  --accent-hover:  var(--orange-600);
+  --accent-active: var(--orange-700);
+  --accent-text:   var(--white);
+
+  /* ---- Semantic: status (muted, never alarmist) --------- */
+  --success: #3F7A5A;
+  --success-bg: #E6F0EA;
+  --info:    var(--teal-600);
+  --info-bg: var(--teal-50);
+  --warning: var(--orange-600);
+  --warning-bg: var(--orange-50);
+  --focus-ring: var(--orange-400);
+}

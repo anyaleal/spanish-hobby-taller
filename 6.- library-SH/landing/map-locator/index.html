@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Spanish Map Locator — Spanish Hobby</title>
+  <meta name="description" content="Enter any Spanish word or expression and see exactly where it lives on the Spanish Map — the blueprint of how the language works." />
+
+  <!-- Design system (same tokens as the landing page) -->
+  <link rel="stylesheet" href="/map-locator/ds/styles.css?v=5" />
+  <link rel="stylesheet" href="/map-locator/page.css?v=5" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="site-header">
+      <a class="logo" href="https://spanishhobby.com" aria-label="Spanish Hobby home">
+        <img src="/map-locator/assets/logo-mark.png" alt="" />
+        <span class="wordmark"><span class="es">Spanish</span><span class="hobby">Hobby</span></span>
+      </a>
+      <span class="header-note">Free tool</span>
+    </header>
+
+    <!-- Hero -->
+    <section class="tool-hero">
+      <p class="eyebrow"><span class="rule"></span> The Spanish Map Locator</p>
+      <h1>Where does this word<br><span class="accent">actually live?</span></h1>
+      <p class="lead">
+        Enter any Spanish word or expression. We'll show you where it lives on the Spanish Map.
+      </p>
+    </section>
+
+    <!-- Main tool -->
+    <main id="tool-main" class="tool-main">
+
+      <!-- Search bar -->
+      <form id="search-form" class="search-form" role="search">
+        <label for="word-input" class="sr-only">Enter a Spanish word or expression</label>
+        <input
+          id="word-input"
+          type="text"
+          class="word-input"
+          placeholder="e.g. aunque, tener ganas de, ser vs. estar…"
+          autocomplete="off"
+          spellcheck="false"
+          lang="es"
+        />
+        <button type="submit" class="btn btn-primary" id="search-btn">
+          <span class="btn-text">Locate it</span>
+          <span class="btn-loading" hidden aria-hidden="true">
+            <span class="spinner"></span>
+          </span>
+        </button>
+      </form>
+
+      <!-- The Spanish Map (always visible, nodes illuminate on result) -->
+      <section class="map-section" aria-label="The Spanish Map">
+        <div class="map-grid">
+
+          <!-- PART 1 -->
+          <div class="map-part" data-part="1">
+            <div class="part-header">
+              <span class="part-number">Part 1</span>
+              <span class="part-title">The Hidden Structure</span>
+              <span class="part-sub">The invisible blueprint</span>
+            </div>
+            <div class="node-row">
+              <button class="node" data-node="Phonetics" tabindex="-1">Phonetics</button>
+              <button class="node" data-node="Phonology" tabindex="-1">Phonology</button>
+              <button class="node" data-node="Morphology" tabindex="-1">Morphology</button>
+              <button class="node" data-node="Syntax" tabindex="-1">Syntax</button>
+              <button class="node" data-node="Semantics" tabindex="-1">Semantics</button>
+              <button class="node" data-node="Pragmatics" tabindex="-1">Pragmatics</button>
+            </div>
+          </div>
+
+          <!-- PART 2 -->
+          <div class="map-part" data-part="2">
+            <div class="part-header">
+              <span class="part-number">Part 2</span>
+              <span class="part-title">The Building Blocks</span>
+              <span class="part-sub">The 9 parts of speech</span>
+            </div>
+            <div class="node-row">
+              <button class="node" data-node="Noun" tabindex="-1">Noun</button>
+              <button class="node" data-node="Verb" tabindex="-1">Verb</button>
+              <button class="node" data-node="Adjective" tabindex="-1">Adjective</button>
+              <button class="node" data-node="Adverb" tabindex="-1">Adverb</button>
+              <button class="node" data-node="Pronoun" tabindex="-1">Pronoun</button>
+              <button class="node" data-node="Preposition" tabindex="-1">Preposition</button>
+              <button class="node" data-node="Conjunction" tabindex="-1">Conjunction</button>
+              <button class="node" data-node="Determiner" tabindex="-1">Determiner</button>
+              <button class="node" data-node="Interjection" tabindex="-1">Interjection</button>
+            </div>
+          </div>
+
+          <!-- PART 3 -->
+          <div class="map-part" data-part="3">
+            <div class="part-header">
+              <span class="part-number">Part 3</span>
+              <span class="part-title">Real World Spanish</span>
+              <span class="part-sub">The inhabited house</span>
+            </div>
+            <div class="part3-groups">
+              <div class="node-group">
+                <span class="group-label">How Spanish Is Spoken</span>
+                <div class="node-row">
+                  <button class="node" data-node="Regional variation" tabindex="-1">Regional variation</button>
+                  <button class="node" data-node="Social register" tabindex="-1">Social register</button>
+                  <button class="node" data-node="Code-switching" tabindex="-1">Code-switching</button>
+                </div>
+              </div>
+              <div class="node-group">
+                <span class="group-label">Pitfalls and Bridges</span>
+                <div class="node-row">
+                  <button class="node" data-node="Cognates" tabindex="-1">Cognates</button>
+                  <button class="node" data-node="False friends" tabindex="-1">False friends</button>
+                  <button class="node" data-node="Common errors" tabindex="-1">Common errors</button>
+                </div>
+              </div>
+              <div class="node-group">
+                <span class="group-label">Natural Learning Path</span>
+                <div class="node-row">
+                  <button class="node" data-node="Exposure" tabindex="-1">Exposure</button>
+                  <button class="node" data-node="Recognition" tabindex="-1">Recognition</button>
+                  <button class="node" data-node="Spontaneity" tabindex="-1">Spontaneity</button>
+                </div>
+              </div>
+              <div class="node-group">
+                <span class="group-label">Cultural Nuances</span>
+                <div class="node-row">
+                  <button class="node" data-node="Cultural expressions" tabindex="-1">Cultural expressions</button>
+                  <button class="node" data-node="Proverbs and sayings" tabindex="-1">Proverbs and sayings</button>
+                  <button class="node" data-node="Humor and pop culture" tabindex="-1">Humor and pop culture</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Result cards (shown after analysis) -->
+      <section id="results" class="results" hidden aria-live="polite" aria-atomic="true">
+        <div class="results-header">
+          <h2 class="results-title">
+            <span id="results-word"></span> lives in at least
+            <span id="results-count"></span>
+            <span id="results-count-label"></span> on the Spanish Map. Here's a glimpse.
+          </h2>
+        </div>
+        <div id="cards-grid" class="cards-grid"></div>
+
+        <div class="results-cta">
+          <a class="cta-btn cta-secondary" href="https://library.spanishhobby.com">
+            Download the free Spanish Map →
+          </a>
+          <a class="cta-btn cta-primary" href="https://calendly.com/hola-spanishhobby/30min" target="_blank" rel="noopener" data-cta="book-class">
+            Want to explore this further? Book a class →
+          </a>
+        </div>
+      </section>
+
+      <!-- Error state -->
+      <div id="error-state" class="error-state" hidden role="alert">
+        <p id="error-message" class="error-message"></p>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Spanish Hobby.
+        <a href="https://library.spanishhobby.com">Get the free Spanish Map guide →</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <script type="module" src="/map-locator/locator.js?v=5"></script>
+</body>
+</html>

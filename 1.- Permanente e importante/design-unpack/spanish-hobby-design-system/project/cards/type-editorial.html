@@ -1,0 +1,24 @@
+<!-- @dsCard group="Type" viewport="700x230" name="Editorial serif" subtitle="Serif appears only for chapter titles, manual covers and pull quotes — never UI." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 22px 24px; background: var(--surface-page); }
+  .wrap { display: flex; flex-direction: column; gap: 18px; }
+  .eyebrow { font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brown-500); margin: 0 0 6px; }
+  .chapter { font-family: var(--font-serif); font-size: 34px; font-weight: 600; color: var(--text-heading); line-height: 1.1; margin: 0; }
+  .quote { font-family: var(--font-serif); font-style: italic; font-weight: 400; font-size: 22px; line-height: 1.4; color: var(--text-body); margin: 0; max-width: 46ch; border-left: 3px solid var(--rule-accent); padding-left: 18px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Chapter Two</p>
+      <h2 class="chapter">The Sounds Beneath the Words</h2>
+    </div>
+    <blockquote class="quote">“You don't see the structure — but it's always there, giving Spanish its shape and logic.”</blockquote>
+  </div>
+</body>
+</html>

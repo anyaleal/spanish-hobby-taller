@@ -1,0 +1,88 @@
+/* ============================================================
+   Spanish Hobby — Base Layer
+   Minimal element defaults that wire the tokens to real elements.
+   Kept light so consumers inherit sensible, on-brand defaults.
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  line-height: var(--body-leading);
+  font-weight: var(--weight-regular);
+  color: var(--text-body);
+  background-color: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
+  color: var(--text-strong);
+  margin: 0 0 var(--space-4);
+  text-wrap: balance;
+}
+
+p {
+  margin: 0 0 var(--space-4);
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+  transition: var(--transition-color);
+}
+
+a:hover {
+  color: var(--text-link-hover);
+}
+
+strong { font-weight: var(--weight-semibold); }
+
+small { font-size: var(--text-sm); }
+
+img { max-width: 100%; display: block; }
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--ring-focus);
+  border-radius: var(--radius-xs);
+}
+
+::selection {
+  background: var(--teal-200);
+  color: var(--ink-900);
+}
+
+/* Editorial helper — apply to chapter titles / pull quotes */
+.editorial {
+  font-family: var(--font-editorial);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-normal);
+}
+
+/* Short brand underline rule used under headings */
+.rule-accent {
+  width: 64px;
+  height: 3px;
+  border: none;
+  background: var(--rule-accent);
+  margin: var(--space-4) 0;
+  border-radius: var(--radius-pill);
+}

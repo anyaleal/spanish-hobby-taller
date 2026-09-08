@@ -1,0 +1,11 @@
+# === Datos privados — NO subir al repositorio público ===
+# Carpeta de prospección: contiene PII real de terceros (prospectos.csv)
+# y la estrategia interna de captación.
+2.- Prospectos/
+
+# === Archivos grandes ===
+# Audio de 115 MB: supera el límite de 100 MB de GitHub y bloquearía el push.
+semana 3.wav
+
+# === Archivos de sistema de macOS ===
+.DS_Store

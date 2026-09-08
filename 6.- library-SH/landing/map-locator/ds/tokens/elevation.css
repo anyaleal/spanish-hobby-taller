@@ -1,0 +1,46 @@
+/* ============================================================
+   Spanish Hobby — Elevation & Motion Tokens
+   Shadows are soft, warm-tinted, and subtle — cards float gently
+   on the off-white page, never harsh. Motion is calm: short,
+   eased fades and small lifts. No bounces, no spring, no flash.
+   ============================================================ */
+
+:root {
+  /* ---- Shadows (warm, low-contrast) ------------------- */
+  --shadow-xs: 0 1px 2px rgba(28, 28, 28, 0.05);
+  --shadow-sm: 0 1px 3px rgba(28, 28, 28, 0.06), 0 1px 2px rgba(28, 28, 28, 0.04);
+  --shadow-md: 0 4px 14px rgba(28, 28, 28, 0.07), 0 1px 3px rgba(28, 28, 28, 0.05);
+  --shadow-lg: 0 12px 32px rgba(28, 28, 28, 0.10), 0 3px 8px rgba(28, 28, 28, 0.05);
+  --shadow-xl: 0 24px 60px rgba(28, 28, 28, 0.14);
+  --shadow-card: var(--shadow-md);
+  --shadow-card-hover: var(--shadow-lg);
+
+  /* tinted teal glow for inverse surfaces */
+  --shadow-on-teal: 0 8px 28px rgba(11, 61, 71, 0.35);
+  /* focus ring */
+  --ring-focus: 0 0 0 3px rgba(217, 130, 75, 0.45);   /* orange-400 @ 45% */
+  --ring-focus-teal: 0 0 0 3px rgba(90, 155, 168, 0.45);
+
+  /* ---- Motion -----------------------------------------
+     @kind other */
+  --ease-standard: cubic-bezier(0.4, 0.0, 0.2, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1); /* @kind other */
+  --ease-in: cubic-bezier(0.4, 0.0, 1, 1); /* @kind other */
+  --ease-calm: cubic-bezier(0.33, 0.0, 0.0, 1); /* @kind other */
+
+  --duration-fast: 120ms; /* @kind other */
+  --duration-base: 200ms; /* @kind other */
+  --duration-slow: 320ms; /* @kind other */
+  --duration-slower: 500ms; /* @kind other */
+
+  --transition-base: all var(--duration-base) var(--ease-standard); /* @kind other */
+  --transition-color: color var(--duration-fast) var(--ease-standard),
+                      background-color var(--duration-fast) var(--ease-standard),
+                      border-color var(--duration-fast) var(--ease-standard); /* @kind other */
+  --transition-lift: transform var(--duration-base) var(--ease-calm),
+                     box-shadow var(--duration-base) var(--ease-calm); /* @kind other */
+
+  /* hover/press conventions */
+  --hover-lift: -2px; /* @kind other */
+  --press-scale: 0.985; /* @kind other */
+}

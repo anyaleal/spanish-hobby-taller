@@ -1,0 +1,54 @@
+<!-- @dsCard group="Colors" viewport="700x230" name="Semantic roles in use" subtitle="How the palette maps to surfaces, text and actions across light and inverse contexts." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 18px; background: var(--surface-page); font-family: var(--font-sans); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .panel { border-radius: var(--radius-md); padding: 16px 18px; box-shadow: var(--shadow-sm); }
+  .light { background: var(--surface-card); border: 1px solid var(--border-subtle); }
+  .inverse { background: var(--surface-inverse); }
+  .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 8px; }
+  .light .eyebrow { color: var(--text-accent); }
+  .inverse .eyebrow { color: var(--text-on-teal-muted); }
+  h4 { margin: 0 0 4px; font-size: 17px; }
+  .light h4 { color: var(--text-strong); }
+  .inverse h4 { color: var(--text-on-teal); }
+  p { margin: 0 0 12px; font-size: 12.5px; line-height: 1.5; }
+  .light p { color: var(--text-muted); }
+  .inverse p { color: var(--text-on-teal-muted); }
+  .btnrow { display: flex; gap: 8px; }
+  .btn { font-size: 12px; font-weight: 600; padding: 7px 14px; border-radius: var(--radius-sm); border: 1.5px solid transparent; cursor: default; }
+  .btn-teal { background: var(--action); color: var(--action-text); }
+  .btn-ghost { background: transparent; color: var(--action-ghost-text); border-color: var(--action-ghost-border); }
+  .btn-orange { background: var(--accent); color: var(--accent-text); }
+  .btn-on-teal { background: var(--white); color: var(--teal-700); }
+  .btn-ghost-on-teal { background: transparent; color: var(--white); border-color: var(--border-on-teal); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="panel light">
+      <p class="eyebrow">Light surface</p>
+      <h4>The Hidden Structure</h4>
+      <p>Teal headings on warm paper; orange reserved for a single point of emphasis.</p>
+      <div class="btnrow">
+        <span class="btn btn-teal">Primary</span>
+        <span class="btn btn-ghost">Outline</span>
+        <span class="btn btn-orange">Accent</span>
+      </div>
+    </div>
+    <div class="panel inverse">
+      <p class="eyebrow">Inverse band</p>
+      <h4>100% free, designed with care</h4>
+      <p>Full-bleed teal sections invert the palette: white text, light-teal support copy.</p>
+      <div class="btnrow">
+        <span class="btn btn-on-teal">Primary</span>
+        <span class="btn btn-ghost-on-teal">Outline</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

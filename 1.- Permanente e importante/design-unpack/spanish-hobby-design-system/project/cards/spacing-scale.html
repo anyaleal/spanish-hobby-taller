@@ -1,0 +1,27 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Spacing scale" subtitle="4px base. Generous white space is core — sections breathe at 96–128px." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px 22px; background: var(--surface-page); font-family: var(--font-sans); }
+  .row { display: flex; align-items: flex-end; gap: 14px; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .bar { background: var(--teal-600); border-radius: 3px; width: 100%; }
+  .lab { font-size: 10.5px; color: var(--text-muted); text-align: center; white-space: nowrap; }
+  .lab b { display: block; color: var(--text-strong); font-size: 11px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item" style="width:18px"><div class="bar" style="height:8px"></div><div class="lab"><b>2</b>8</div></div>
+    <div class="item" style="width:22px"><div class="bar" style="height:16px"></div><div class="lab"><b>4</b>16</div></div>
+    <div class="item" style="width:28px"><div class="bar" style="height:24px"></div><div class="lab"><b>5</b>24</div></div>
+    <div class="item" style="width:36px"><div class="bar" style="height:32px"></div><div class="lab"><b>6</b>32</div></div>
+    <div class="item" style="width:44px"><div class="bar" style="height:48px"></div><div class="lab"><b>8</b>48</div></div>
+    <div class="item" style="width:56px"><div class="bar" style="height:64px"></div><div class="lab"><b>9</b>64</div></div>
+    <div class="item" style="width:70px"><div class="bar" style="height:96px"></div><div class="lab"><b>11</b>96</div></div>
+  </div>
+</body>
+</html>

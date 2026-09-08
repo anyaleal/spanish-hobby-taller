@@ -1,0 +1,63 @@
+/* ============================================================
+   Spanish Hobby — Spacing & Layout Tokens
+   Generous white space is core to the brand. The scale is built
+   on a 4px base with room to breathe at section level.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (4px base) ----------------------- */
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4 */
+  --space-2: 0.5rem;    /* 8 */
+  --space-3: 0.75rem;   /* 12 */
+  --space-4: 1rem;      /* 16 */
+  --space-5: 1.5rem;    /* 24 */
+  --space-6: 2rem;      /* 32 */
+  --space-7: 2.5rem;    /* 40 */
+  --space-8: 3rem;      /* 48 */
+  --space-9: 4rem;      /* 64 */
+  --space-10: 5rem;     /* 80 */
+  --space-11: 6rem;     /* 96 */
+  --space-12: 8rem;     /* 128 — section breathing room */
+
+  /* ---- Semantic spacing ------------------------------- */
+  --gap-inline: var(--space-3);     /* between inline items */
+  --gap-stack: var(--space-4);      /* between stacked elements */
+  --gap-card: var(--space-5);       /* card internal padding rhythm */
+  --gap-grid: var(--space-6);       /* between cards in a grid */
+  --pad-card: var(--space-6);       /* card body padding */
+  --pad-section-y: var(--space-11); /* vertical section padding */
+  --pad-page-x: var(--space-8);     /* page side gutters */
+
+  /* ---- Layout widths ---------------------------------- */
+  --width-prose: 68ch;      /* comfortable reading measure */
+  --width-content: 1080px;  /* standard content column */
+  --width-wide: 1280px;     /* full marketing width */
+  --width-narrow: 720px;    /* focused editorial column */
+
+  /* ---- Radii ------------------------------------------ */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;    /* DEFAULT card radius (8–12px brand range) */
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+  --radius-card: var(--radius-md);
+  --radius-button: var(--radius-sm);
+  --radius-input: var(--radius-sm);
+  --radius-image: var(--radius-md);
+
+  /* ---- Borders ---------------------------------------- */
+  --border-width: 1px;
+  --border-width-strong: 1.5px;
+  --border-width-accent: 2px;
+
+  /* ---- Z-index ----------------------------------------
+     @kind other */
+  --z-base: 1; /* @kind other */
+  --z-raised: 10; /* @kind other */
+  --z-sticky: 100; /* @kind other */
+  --z-overlay: 1000; /* @kind other */
+  --z-modal: 1100; /* @kind other */
+  --z-toast: 1200; /* @kind other */
+}

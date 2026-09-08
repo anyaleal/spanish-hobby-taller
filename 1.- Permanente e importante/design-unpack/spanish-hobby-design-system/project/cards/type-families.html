@@ -1,0 +1,36 @@
+<!-- @dsCard group="Type" viewport="700x210" name="Typefaces" subtitle="Inter for all UI and body. Source Serif 4 & Lora for editorial moments only." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px; background: var(--surface-page); }
+  .stack { display: flex; flex-direction: column; gap: 16px; }
+  .spec { display: grid; grid-template-columns: 130px 1fr; align-items: baseline; gap: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border-subtle); }
+  .spec:last-child { border-bottom: none; padding-bottom: 0; }
+  .meta { font-family: var(--font-sans); }
+  .meta .n { font-size: 13px; font-weight: 600; color: var(--text-strong); }
+  .meta .r { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+  .sample-sans { font-family: var(--font-sans); font-size: 30px; font-weight: 700; color: var(--text-strong); letter-spacing: -0.011em; }
+  .sample-serif { font-family: var(--font-serif); font-size: 30px; font-weight: 500; color: var(--text-strong); }
+  .sample-lora { font-family: var(--font-serif-alt); font-size: 28px; font-weight: 500; font-style: italic; color: var(--text-heading); }
+</style>
+</head>
+<body>
+  <div class="stack">
+    <div class="spec">
+      <div class="meta"><div class="n">Inter</div><div class="r">UI · Body · Headings</div></div>
+      <div class="sample-sans">How Spanish really works</div>
+    </div>
+    <div class="spec">
+      <div class="meta"><div class="n">Source Serif 4</div><div class="r">Editorial · Covers</div></div>
+      <div class="sample-serif">Chapter One — The Hidden Structure</div>
+    </div>
+    <div class="spec">
+      <div class="meta"><div class="n">Lora</div><div class="r">Pull quotes · Italics</div></div>
+      <div class="sample-lora">“Patterns, not memorization.”</div>
+    </div>
+  </div>
+</body>
+</html>

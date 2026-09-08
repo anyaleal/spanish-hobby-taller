@@ -1,0 +1,43 @@
+<!-- @dsCard group="Brand" viewport="700x250" name="Voice & tone" subtitle="Calm, curious, intelligent. MasterClass meets National Geographic — never gamified." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px 22px; background: var(--surface-page); font-family: var(--font-sans); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .col h5 { margin: 0 0 10px; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+  .do h5 { color: var(--teal-600); }
+  .dont h5 { color: var(--orange-600); }
+  ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  li { font-size: 13px; line-height: 1.4; color: var(--text-body); padding-left: 20px; position: relative; }
+  li::before { position: absolute; left: 0; top: 0; font-weight: 700; }
+  .do li::before { content: "✓"; color: var(--teal-600); }
+  .dont li::before { content: "×"; color: var(--orange-500); }
+  .dont li { color: var(--text-muted); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="col do">
+      <h5>We sound like</h5>
+      <ul>
+        <li>“Explore how Spanish actually works.”</li>
+        <li>A curious, intelligent adult speaking to a peer.</li>
+        <li>Patterns &amp; structure over rules to memorize.</li>
+        <li>English in all UI; Spanish only as examples.</li>
+      </ul>
+    </div>
+    <div class="col dont">
+      <h5>We never</h5>
+      <ul>
+        <li>“Level up your streak! 🔥 Keep it going!”</li>
+        <li>Gamify, rush, or talk down to beginners.</li>
+        <li>Lean on travel-phrasebook clichés.</li>
+        <li>Use emoji or exclamation-heavy hype.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
